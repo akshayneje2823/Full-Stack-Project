@@ -2,6 +2,10 @@ const express = require("express");
 const signUpTemplete = require('../models/signupModels')
 const router = express.Router();
 
+router.get('/',(req,res)=>{
+    res.send("Hello Brother")
+})
+
 router.post('/singnup',(req,res)=>{
     const [fullName,username,email,password] = req.body;
 
